@@ -8,8 +8,8 @@ modules:
    type: html5
    path: sample.Shop
    parameters:
-      disk-quota: 128M
-      memory: 128M
+      disk-quota: 512M
+      memory: 512M
    build-parameters:
       builder: grunt
    requires:
