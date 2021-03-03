@@ -1,0 +1,32 @@
+ID: Demo_MTA_Project
+_schema-version: '2.1'
+description: Demo MTA Project
+version: 0.0.1
+
+modules:
+ - name: sample.Shop
+   type: html5
+   path: sample.Shop
+   parameters:
+      disk-quota: 128M
+      memory: 128M
+   build-parameters:
+      builder: grunt
+   requires:
+    - name: uaa_Demo_MTA_Project
+    - name: dest_Demo_MTA_Project
+
+resources:
+ - name: uaa_Demo_MTA_Project
+   parameters:
+      path: ./xs-security.json
+      service-plan: application
+      service: xsuaa
+   type: org.cloudfoundry.managed-service
+
+ - name: dest_Demo_MTA_Project
+   parameters:
+      service-plan: lite
+      service: destination
+   type: org.cloudfoundry.managed-service
+
