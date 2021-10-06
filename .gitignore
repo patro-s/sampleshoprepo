@@ -15,3 +15,6 @@ AppVariantPreviewPayload.zip
 mergedManifestDescriptor.json
 APIExternalProducer.js
 .*/APIExternalProducer.js
+/sample.Shop/node_modules/
+/sample.Shop/dist/
+/sample.Shop/package-lock.json
