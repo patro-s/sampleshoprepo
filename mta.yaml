@@ -5,7 +5,7 @@ version: 0.0.1
 
 parameters:
   dep-space: dev
-  xs-uaa-app-name: shoppr_dev
+  xs-uaa-app-name: shoppr_dev_demo
   app_name: shoppr
   deployed_domain: cfapps.eu10.hana.ondemand.com
 
